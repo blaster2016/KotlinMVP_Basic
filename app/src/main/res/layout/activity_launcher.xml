@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:rotation="45"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_splash_design"
+        android:visibility="gone" />
+
+    <ImageView
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/kotlin" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fontFamily="@font/name_font"
+        android:gravity="center"
+        android:padding="@dimen/_10sdp"
+        android:text="Developed By : Dinesh Singh"
+        android:textColor="@color/cl_blue"
+        android:textSize="@dimen/_19sdp" />
+
+</RelativeLayout>
