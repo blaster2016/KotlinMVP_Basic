@@ -65,7 +65,6 @@ class AuthenticateActivity : BaseActivity(), AuthenticateView {
 
     fun listner() {
         btnLogin?.setOnClickListener {
-
             authPresentor?.validate(getText(etUserName), getText(etUserPass))
         }
     }
