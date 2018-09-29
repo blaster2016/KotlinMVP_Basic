@@ -18,7 +18,9 @@ import com.dinesh.app.util.callback.NetworkCallback
  */
 
 abstract class BaseActivity : AppCompatActivity(), NetworkCallback {
+
     var networkBroadcast: BroadcastReceiver? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(setLayout())
@@ -49,7 +51,7 @@ abstract class BaseActivity : AppCompatActivity(), NetworkCallback {
             }
         }
         try {
-            LocalBroadcastManager.getInstance(this).registerReceiver(networkBroadcast, IntentFilter(Consts.NETWORK_BR))
+            LocalBroadcastManager.getInstance(this).registerReceiver(networkBroadcast as BroadcastReceiver, IntentFilter(Consts.NETWORK_BR))
         } catch (exception: Exception) {
             exception.printStackTrace()
         }
