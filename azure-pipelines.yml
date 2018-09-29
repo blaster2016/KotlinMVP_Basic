@@ -8,4 +8,12 @@ steps:
     gradleWrapperFile: 'gradlew'
     gradleOptions: '-Xmx1536m'
     publishJUnitResults: false
-    tasks: 'assembleDebug'
+    javaHomeOption: 'JDKVersion'
+    jdkVersionOption: '1.10'
+    jdkArchitectureOption: 'x64'
+    publishJUnitResults: false
+    testResultsFiles: '**/TEST-*.xml'
+    tasks: 'build'
+
+    pool:
+      vmImage: 'Ubuntu 16.04'
