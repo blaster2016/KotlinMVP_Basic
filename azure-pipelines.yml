@@ -14,6 +14,3 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/TEST-*.xml'
     tasks: 'build'
-
-    pool:
-      vmImage: 'Ubuntu 16.04'
